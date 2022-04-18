@@ -141,6 +141,14 @@ public class Main {
 
         Integer sheetRow=0;
   
+        
+        
+                            try {
+            ProjectJsonParser2 PJP = new ProjectJsonParser2();
+            PJP.ParseProject("C:\\Users\\Tim Arden\\Desktop\\MasterThesis\\master thesis 16-4-2022\\DataSet\\data1-5p4c.json");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
   
         int count =1;
                 Map<String, Object[]> studentData
@@ -156,6 +164,8 @@ public class Main {
 
             Long start , end , elapsedTime; 
 
+
+        
 
             int P,I,N;
             P =25;
